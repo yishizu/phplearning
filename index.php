@@ -131,4 +131,17 @@
 
     $age = $person->get_age();
     echo "<p>$age</p>";
+
+    error_reporting(E_ALL);
+    setcookie('error',true);
+    $a = 2;
+
+    var_dump($a);
+    print_r($a);
+
+    try{
+        echo "";
+    }catch(Exception $e){
+        echo $e;
+    }
 ?>
